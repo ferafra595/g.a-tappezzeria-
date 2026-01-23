@@ -265,3 +265,18 @@ a{color:inherit;text-decoration:none}
   object-fit:cover;
   display:block;
 }
+.shot__pair{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:8px;
+  height:180px;
+  padding:10px;
+}
+
+.shot__pair img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius: 14px;
+  display:block;
+}
