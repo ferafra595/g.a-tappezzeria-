@@ -46,6 +46,11 @@ a{color:inherit;text-decoration:none}
 .header__row{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
 
 .brand{display:flex;gap:12px;align-items:center}
+.brand__logo{
+  height:42px;
+  width:auto;
+  display:block;
+}
 .brand__mark{
   width:42px;height:42px;border-radius:14px;
   display:grid;place-items:center;
