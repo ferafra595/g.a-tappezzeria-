@@ -266,13 +266,50 @@ a{color:inherit;text-decoration:none}
   border-radius: 14px;
   display:block;
 }
+/* BRAND / LOGO */
 .brand{
   display:flex;
   align-items:center;
+  gap:16px;
+  text-decoration:none;
 }
 
+/* Desktop */
 .brand img{
-  height:64px;
+  height:90px;        /* LOGO GRANDE E VISIBILE */
   width:auto;
   display:block;
 }
+
+/* Testo accanto al logo */
+.brand__text{
+  display:flex;
+  flex-direction:column;
+  line-height:1.1;
+}
+
+.brand__text strong{
+  font-size:1.1rem;
+  color:#fff;
+}
+
+.brand__text small{
+  font-size:0.85rem;
+  color:#aab3c5;
+}
+
+/* Mobile */
+@media (max-width: 768px){
+  .brand img{
+    height:64px;     /* più piccolo ma leggibile */
+  }
+
+  .brand__text strong{
+    font-size:1rem;
+  }
+
+  .brand__text small{
+    font-size:0.75rem;
+  }
+}
+
