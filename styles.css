@@ -307,6 +307,46 @@ a{color:inherit;text-decoration:none}
   .brand__text strong{
     font-size:1rem;
   }
+/* HERO CTA BLOCK (come screenshot) */
+.heroActions{
+  margin-top: 18px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  max-width: 560px;
+}
+
+.heroActions__row{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.btn--wa{
+  background: linear-gradient(135deg,#ff7a00,#ffb000);
+  color:#111;
+  border:1px solid rgba(255,255,255,0.12);
+}
+
+.btn--review{
+  background: rgba(255,255,255,0.06);
+  color:#fff;
+  border:1px solid rgba(255,255,255,0.14);
+  width: fit-content;
+}
+
+@media (max-width: 768px){
+  .heroActions{
+    max-width: 100%;
+  }
+  .heroActions__row{
+    flex-direction:column;
+  }
+  .heroActions__row .btn,
+  .btn--review{
+    width:100%;
+  }
+}
 
   .brand__text small{
     font-size:0.75rem;
