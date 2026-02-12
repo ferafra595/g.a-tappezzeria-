@@ -31,6 +31,7 @@ if (toggle && menu) {
 
 // Set link CTA
 const waTop = document.getElementById("waTop");
+if (waFoto) waFoto.href = url;
 const waQuote = document.getElementById("waQuote");
 const waBottom = document.getElementById("waBottom");
 const igDm = document.getElementById("igDm");
