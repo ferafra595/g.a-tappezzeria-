@@ -454,33 +454,31 @@ a{color:inherit;text-decoration:none}
   border-radius:18px;
   filter: grayscale(0.2) contrast(1.1);
 }
+/* FIX: Social icons visibili SEMPRE */
 .socials{
-  display:flex;
-  gap:14px;
-  margin-top:16px;
+  display:flex !important;
+  gap:14px !important;
+  margin-top:16px !important;
 }
 
 .socials a{
-  width:54px;
-  height:54px;
-  border-radius:16px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:rgba(255,255,255,0.04);
-  border:1px solid rgba(255,255,255,.08);
-  transition:.2s;
-  overflow:hidden;
-}
-
-.socials a:hover{
-  transform: translateY(-3px);
-  background:rgba(255,255,255,0.08);
+  width:54px !important;
+  height:54px !important;
+  border-radius:16px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  background:rgba(255,255,255,0.04) !important;
+  border:1px solid rgba(255,255,255,.08) !important;
+  overflow:hidden !important;
 }
 
 .socials img{
-  width:28px;
-  height:28px;
-  display:block;
+  display:block !important;
+  width:28px !important;
+  height:28px !important;
+  object-fit:contain !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  filter:none !important;
 }
-
