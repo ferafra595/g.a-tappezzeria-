@@ -527,8 +527,8 @@ a{color:inherit;text-decoration:none}
 
 /* QUESTA È LA PARTE CHIAVE */
 .socials a img{
-  width:64px !important;
-  height:64px !important;
+  width:100px !important;
+  height:100px !important;
   max-width:none !important;
   max-height:none !important;
 }
