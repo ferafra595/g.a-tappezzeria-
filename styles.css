@@ -482,3 +482,28 @@ a{color:inherit;text-decoration:none}
   visibility:visible !important;
   filter:none !important;
 }
+/* SOCIAL ICONS – dimensione maggiore */
+.socials{
+  gap:18px;
+}
+
+.socials a{
+  width:80px;
+  height:80px;
+  border-radius:22px;
+}
+
+.socials img{
+  width:48px;
+  height:48px;
+}
+@media (max-width: 480px){
+  .socials a{
+    width:64px;
+    height:64px;
+  }
+  .socials img{
+    width:36px;
+    height:36px;
+  }
+}
