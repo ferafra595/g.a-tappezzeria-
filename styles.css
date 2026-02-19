@@ -507,3 +507,28 @@ a{color:inherit;text-decoration:none}
     height:36px;
   }
 }
+/* === FORCE SOCIAL ICONS SIZE === */
+.socials{
+  display:flex !important;
+  gap:22px !important;
+}
+
+.socials a{
+  width:96px !important;
+  height:96px !important;
+  min-width:96px !important;
+  min-height:96px !important;
+  border-radius:26px !important;
+
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+
+/* QUESTA È LA PARTE CHIAVE */
+.socials a img{
+  width:64px !important;
+  height:64px !important;
+  max-width:none !important;
+  max-height:none !important;
+}
