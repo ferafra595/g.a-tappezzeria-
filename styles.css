@@ -553,3 +553,66 @@ footer.footer{
   background:#05070c;
   border-top:1px solid rgba(255,255,255,.08);
 }
+/* ===== MOBILE POLISH ===== */
+@media (max-width: 720px){
+
+  /* Footer: stack pulito */
+  .footer__row{
+    padding: 26px 0;
+    gap: 22px;
+  }
+
+  .footer__col{
+    min-width: 0;
+  }
+
+  /* Logo footer: ridimensionato e centrato */
+  .footer__logo{
+    height: 64px;            /* prima era enorme */
+    margin: 0 auto 12px;
+  }
+
+  /* Testi: più leggibili e meno “muro” */
+  .footer__text{
+    font-size: 14px;
+    line-height: 1.55;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* Titoli sezioni */
+  .footer__title{
+    font-size: 15px;
+    margin: 14px 0 10px;
+    text-align: left;
+  }
+
+  /* Link: due colonne invece di lista infinita */
+  .footer__links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 14px;
+  }
+
+  .footer__links a{
+    padding: 10px 12px;
+    border-radius: 14px;
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.08);
+    text-align: center;
+  }
+
+  /* Bottom: più aria */
+  .footer__bottom{
+    padding: 14px 12px;
+    font-size: 12.5px;
+  }
+
+  /* Floating WhatsApp: più piccolo e meno invadente */
+  .waFloat{
+    right: 14px;
+    bottom: 14px;
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+}
