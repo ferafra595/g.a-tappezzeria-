@@ -553,66 +553,98 @@ footer.footer{
   background:#05070c;
   border-top:1px solid rgba(255,255,255,.08);
 }
-/* ===== MOBILE POLISH ===== */
+/* ===== FOOTER MOBILE: versione pulita (1 colonna + card) ===== */
 @media (max-width: 720px){
 
-  /* Footer: stack pulito */
+  /* Contatti: metti ordine, spazi e mappa piena */
+  .section{ padding: 44px 0; }
+  .split{ grid-template-columns: 1fr; gap: 16px; }
+
+  .map{
+    padding: 0;               /* niente padding che “rimpicciolisce” la mappa */
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.08);
+    background: rgba(255,255,255,.02);
+  }
+  .map iframe{ height: 260px; }
+
+  /* Footer: 1 colonna */
+  .footer{
+    padding: 0;
+    background: #05070c;
+  }
   .footer__row{
-    padding: 26px 0;
-    gap: 22px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 18px 0 10px;
   }
 
+  /* Ogni colonna diventa una “card” */
   .footer__col{
-    min-width: 0;
+    background: rgba(255,255,255,.03);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 18px;
+    padding: 16px;
   }
 
-  /* Logo footer: ridimensionato e centrato */
+  /* Logo: piccolo e centrato (altrimenti rovina tutto) */
   .footer__logo{
-    height: 64px;            /* prima era enorme */
-    margin: 0 auto 12px;
+    height: 56px;
+    margin: 0 auto 10px;
+    display: block;
+    filter: none;
   }
 
-  /* Testi: più leggibili e meno “muro” */
+  /* Testo contatti centrato, più leggibile */
   .footer__text{
+    margin: 0;
     font-size: 14px;
     line-height: 1.55;
     text-align: center;
-    margin-bottom: 10px;
   }
+  .footer__text + .footer__text{ margin-top: 10px; }
+  .footer__text a{ text-decoration: underline; }
 
-  /* Titoli sezioni */
+  /* Titoli */
   .footer__title{
+    margin: 0 0 12px;
     font-size: 15px;
-    margin: 14px 0 10px;
-    text-align: left;
+    font-weight: 800;
+    color: #e8eefc;
   }
 
-  /* Link: due colonne invece di lista infinita */
+  /* Link: bottoni full-width (niente griglie strane) */
   .footer__links{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px 14px;
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
-
   .footer__links a{
-    padding: 10px 12px;
-    border-radius: 14px;
+    display: block;
+    padding: 12px 14px;
+    border-radius: 16px;
     background: rgba(255,255,255,.04);
     border: 1px solid rgba(255,255,255,.08);
     text-align: center;
   }
 
-  /* Bottom: più aria */
+  /* Copyright separato e pulito */
   .footer__bottom{
+    margin-top: 10px;
     padding: 14px 12px;
-    font-size: 12.5px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,.06);
+    background: rgba(255,255,255,.02);
   }
 
-  /* Floating WhatsApp: più piccolo e meno invadente */
+  /* WhatsApp floating: più piccolo e non copre il footer */
   .waFloat{
-    right: 14px;
-    bottom: 14px;
-    padding: 12px 14px;
+    right: 12px;
+    bottom: 12px;
+    padding: 11px 14px;
     font-size: 14px;
+    box-shadow: 0 10px 22px rgba(0,0,0,.45);
   }
 }
