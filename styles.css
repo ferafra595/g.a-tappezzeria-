@@ -527,7 +527,7 @@ a{color:inherit;text-decoration:none}
 .footer{ background:#05070c; border-top:1px solid rgba(255,255,255,.08); }
 .footer__row{ display:flex; gap:40px; padding:40px 0; flex-wrap:wrap; }
 .footer__col{ flex:1; min-width:220px; }
-.footer__logo{ height:42px; margin-bottom:15px; }
+.footer__logo{ height:110px; margin-bottom:18px; }
 .footer__text{ color:#9ca3af; font-size:14px; line-height:1.6; }
 .footer__title{ font-weight:700; margin-bottom:12px; }
 .footer__links{ display:flex; flex-direction:column; gap:8px; }
